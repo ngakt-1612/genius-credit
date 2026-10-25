@@ -258,9 +258,9 @@
   "suite": "S4-NET"
  },
  "28": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -328,9 +328,9 @@
   "suite": "S3-SUB"
  },
  "36": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -384,23 +384,23 @@
   "suite": "S3-SUB"
  },
  "42": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
  "43": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
  "44": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -412,9 +412,9 @@
   "suite": "S3-SUB"
  },
  "46": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -468,16 +468,16 @@
   "suite": "S3-SUB"
  },
  "53": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
  "54": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -673,16 +673,16 @@
   "suite": "S9-STOREKIT"
  },
  "76": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
  "77": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -854,9 +854,9 @@
   "suite": "S2-FREE"
  },
  "94": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -1018,9 +1018,9 @@
   "suite": "S8-RESET"
  },
  "114": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -1337,23 +1337,23 @@
   "suite": "S1-READ"
  },
  "158": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần proxy bắt request offering",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "S1-READ"
  },
  "159": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần proxy bắt request lúc launch",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "S1-READ"
  },
  "160": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  },
@@ -1415,9 +1415,9 @@
   "suite": "S3-SUB"
  },
  "173": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app.",
   "evidence": [],
   "suite": "X-BE"
  }

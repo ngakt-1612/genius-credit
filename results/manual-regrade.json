@@ -54,5 +54,69 @@
  "117": {
   "status": "PASS",
   "why": "PO/tester chốt 25/10 13:10: grandfather bị ẩn My Balance là ĐÚNG. Header badge ẩn, không nút Upgrade (N117-a) + gen Q+1 lần không 481 (N117-b, 21/21) — đạt; phần '413 hiển thị Unlimited' của Expected không áp dụng vì My Balance ẩn (cần cập nhật TC)."
+ },
+ "28": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "36": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "42": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "43": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "44": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "46": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "53": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "54": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "76": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "77": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "94": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "114": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "158": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "159": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "160": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "173": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
  }
 }

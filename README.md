@@ -12,7 +12,8 @@ File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**)
 | Lệch spec | 12 | app khác spec, có thể dev cố ý → hỏi PO |
 | Cần xem | 4 | N041, N087, N126, N138 |
 | Pending | 11 | user cho Pending: nhóm reset 07:00 (N011, N108–N112, N115) · chờ BE auto-release 10′ (N048–N050, N100) |
-| Chờ | 37 | 14 cần BE/Infra giả lập · 2 proxy · máy thứ 2 · tài khoản sandbox khác · PO đổi CMS · server lỗi 25/10 — lý do từng TC ở cột K |
+| N/A | 16 | bỏ theo yêu cầu 25/10: case cần giả lập phía server (vendor lỗi, webhook, API trực tiếp, 5xx, proxy) |
+| Chờ | 21 | máy thứ 2 (6) · tài khoản sandbox / StoreKit lỗi (4) · PO đổi CMS (3) · cần người/đồng ý (3) · ảnh NSFW mẫu (1) · chưa chạy (4) — lý do từng TC ở cột K |
 
 - 75 TC đã chạy 22/10 giữ kết quả + ảnh 22/10, **chấm lại theo Expected mới** (N° đổi → map theo nội dung). 84 TC còn lại chạy vòng 2.
 - Remote Config: **ép giá trị trong code rồi build lại** (`RemoteConfigRepositoryImpl.codeOverrides`, áp trong `syncAllKeys` để đi đúng luật parse của Firebase) — xem `app-patches/`.
