@@ -205,9 +205,9 @@
   "suite": "S3-SUB"
  },
  "22": {
-  "status": "FAIL",
+  "status": "PASS",
   "actual": "KQ: 413: 'Unlimited'=false · Get More=false · chữ: Setting không có hàng My Balance=true · RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44",
-  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203 · CHẤM TAY: Grandfather (tier=unlimitedV1): Setting KHÔNG có hàng My Balance (SettingsView.swift:84 ẩn cố ý với user gen v1) → không có 413 'Unlimited' + Get More như Expected. Có thể là lệch spec có chủ đích của dev — hỏi PO.",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203 · CHẤM TAY: PO/tester chốt 25/10 13:10: grandfather bị ẩn My Balance là ĐÚNG. App ẩn hàng My Balance với grandfather (SettingsView.swift:84) — đúng hành vi đã chốt; Expected TC ('413 Unlimited + Get More') cần cập nhật.",
   "evidence": [
    "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N022/N022-1.png"
   ],
@@ -1039,9 +1039,9 @@
   "suite": "S6-RC"
  },
  "117": {
-  "status": "FAIL",
+  "status": "PASS",
   "actual": "a: header badge=ẩn · Upgrade=false · 413 Unlimited=false · RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44 ‖ b: lần Q+1 không 481: 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true",
-  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203, r2fin-test06_grandfatherGenBeyondQ-112506",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203, r2fin-test06_grandfatherGenBeyondQ-112506 · CHẤM TAY: PO/tester chốt 25/10 13:10: grandfather bị ẩn My Balance là ĐÚNG. Header badge ẩn, không nút Upgrade (N117-a) + gen Q+1 lần không 481 (N117-b, 21/21) — đạt; phần '413 hiển thị Unlimited' của Expected không áp dụng vì My Balance ẩn (cần cập nhật TC).",
   "evidence": [
    "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N117/N117-1.png",
    "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N117/N117-2.png"
@@ -1092,8 +1092,8 @@
  },
  "125": {
   "status": "FAIL",
-  "actual": "KQ: RC ép='empty' · giá trị app đang dùng=2026-10-24T00:00:00Z · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, -",
-  "note": "Autotest vòng 2 24/10 · lượt r2fin-rc-empty-124336 · CHẤM TAY: RC quota_grandfather_until rỗng (ép trong code, đi qua luật syncAllKeys): app bỏ qua chuỗi rỗng → giữ giá trị đã lưu 2026-10-24 (cài mới thì dùng default code 2026-08-11) → tier=creditV3, VẪN áp quota (ví 0 → 481). Expected: không áp quota cho ai. Code chủ ý ngược spec: GeniusApiVersionRouter.swift:99–101 'Rỗng hoặc parse fail → không grandfather ai' — hỏi PO chốt bên nào.",
+  "actual": "KQ: RC ép='empty' · giá trị app đang dùng=2026-08-11T00:00:00Z · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, -",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-n125-fresh2-131850 · CHẤM TAY: Chạy lại 25/10 13:13–13:20 CÀI MỚI (gỡ app → build RC quota_grandfather_until='' → cài): app bỏ qua chuỗi rỗng, dùng default code 2026-08-11T00:00:00Z → tier=creditV3, quotaEnforced=true; ví 0/0 → gen Enhance bị chặn 481 ngay ở Analyze. Lượt trước (không gỡ app) giữ giá trị cũ 2026-10-24 → cùng kết quả. Expected 'Lần Q+1 không bị chặn' → không đạt. (User ghi chú: đây là case check — kết quả đo được ở trên.)",
   "evidence": [],
   "suite": "S6-RC"
  },

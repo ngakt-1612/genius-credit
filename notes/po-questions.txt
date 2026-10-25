@@ -1,3 +1,3 @@
-- Hỏi PO: hết hạn Weekly (đã dùng 1/20 hôm nay) rồi mua Yearly cùng ngày → 413 = 20 (cấp lại đủ Q, không trừ lượt đã dùng trong ngày). Có đúng ý không? (24/10 18:12, test03)
-- Grandfather: app ẩn My Balance (SettingsView.swift:84) — spec N022/N117 muốn 413 'Unlimited' + Get More. Dev cố ý hay bug?
+- Hỏi PO: hết hạn Weekly (đã dùng 1/20 hôm nay) rồi mua Yearly cùng ngày → 413 = 20 (cấp lại đủ Q, không trừ lượt đã dùng trong ngày). Có đúng ý không? (24/10 18:12, test03)  → ĐÃ TRẢ LỜI 25/10: cấp lại đủ 20 (đúng)
+- Grandfather: app ẩn My Balance (SettingsView.swift:84) — spec N022/N117 muốn 413 'Unlimited' + Get More. Dev cố ý hay bug?  → ĐÃ TRẢ LỜI 25/10: ẩn My Balance là đúng
 - quota_grandfather_until rỗng: spec 'không áp quota cho ai' vs code 'không grandfather ai → áp quota cho mọi user' (GeniusApiVersionRouter.swift:99–101) — chốt bên nào?

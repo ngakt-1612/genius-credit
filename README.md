@@ -7,8 +7,8 @@ File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**)
 
 | Status | Số TC | Ghi chú |
 |---|---|---|
-| PASS | 69 | |
-| FAIL | 26 | |
+| PASS | 71 | |
+| FAIL | 24 | |
 | Lệch spec | 12 | app khác spec, có thể dev cố ý → hỏi PO |
 | Cần xem | 4 | N041, N087, N126, N138 |
 | Pending | 11 | user cho Pending: nhóm reset 07:00 (N011, N108–N112, N115) · chờ BE auto-release 10′ (N048–N050, N100) |
@@ -24,8 +24,8 @@ File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**)
 |---|---|---|
 | N005, N012 | FAIL | Badge số lượt vẫn hiện với user không gói / sub hết hạn còn topup (`HomeView.swift:912`) |
 | N004 | FAIL | Nút Upgrade hiển thị "Pro ✨" (spec cấm) |
-| N022, N117 | FAIL | Grandfather: Setting **ẩn My Balance** (`SettingsView.swift:84`) → không có 413 "Unlimited" + Get More |
-| N125 | FAIL | `quota_grandfather_until` rỗng → app giữ giá trị cũ, vẫn áp quota; code chủ ý "không grandfather ai" (`GeniusApiVersionRouter.swift:99–101`) — spec "không áp quota cho ai" |
+| N022, N117 | PASS (PO chốt 25/10) | Grandfather bị ẩn My Balance là **đúng** — Expected TC cần cập nhật |
+| N125 | FAIL | `quota_grandfather_until` rỗng (đo cả khi **cài mới**): app bỏ qua chuỗi rỗng → dùng default code `2026-08-11` → `creditV3`, vẫn áp quota (hết lượt → 481); spec "không áp quota cho ai" |
 | N147 | Lệch spec | `enable_topup=false`: 481 ẩn nhưng offer topup ở chuỗi free & Get More 413 vẫn hiện (`PaywallView.swift:290`) |
 | N078, N099, N105 | Lệch spec / FAIL | Không có màn 482 — mua xong gen chạy tiếp ngay |
 | N155 | FAIL | Mô tả App Store còn "unlimited" + gói Monthly, không có "Q lần tạo/ngày" |
@@ -34,7 +34,7 @@ File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**)
 | N063, N119, N120 | PASS | Grandfather gen 21/21 > Q, không 481, ví không trừ |
 | N167 | PASS | Badge giảm dần → 481 ở lượt Q+1 → mua → gen tự chạy tiếp → 413=0 |
 
-Câu hỏi PO: `notes/po-questions.txt`. Bài học automation: `notes/lessons-24-10.txt`.
+Câu hỏi PO (đã trả lời: mua lại gói trong ngày cấp đủ 20 — đúng; grandfather ẩn My Balance — đúng): `notes/po-questions.txt`. Bài học automation: `notes/lessons-24-10.txt`.
 
 ## Cấu trúc
 
