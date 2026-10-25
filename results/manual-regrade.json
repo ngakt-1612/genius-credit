@@ -118,5 +118,17 @@
  "173": {
   "status": "N/A",
   "why": "Bỏ theo yêu cầu user 25/10 13:34: case cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, 5xx, proxy) — không thuộc phạm vi autotest app."
+ },
+ "136": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS."
+ },
+ "137": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS."
+ },
+ "139": {
+  "status": "N/A",
+  "why": "Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS."
  }
 }

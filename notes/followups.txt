@@ -1,3 +1,4 @@
 - N087: chạy bổ sung test05 có chờ hết 'Scanning Photo' rồi ghi tiếp chuỗi (máy free)
 - N098: đo trong test03 (chờ Weekly hết hạn trước khi mua Yearly)
 - 25/10 13:34: user bỏ 16 case giả lập phía server (N028, N036, N042–N044, N046, N053, N054, N076, N077, N094, N114, N158–N160, N173) → N/A
+- 25/10: user bỏ 3 case PO đổi CMS (N136, N137, N139) → N/A

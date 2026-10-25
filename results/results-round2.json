@@ -1171,16 +1171,16 @@
   "suite": "S1-READ"
  },
  "136": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Phần app: key daily_quota_amount đã gỡ khỏi RemoteConfigKeys.swift:216–218 (đọc code); 413=15 cần PO đặt Q=15 trên CMS — Chờ PO",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS.",
   "evidence": [],
   "suite": "S6-RC"
  },
  "137": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ PO: đổi số lượt/ngày (Q) trên CMS",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS.",
   "evidence": [],
   "suite": "S7-CMS"
  },
@@ -1192,9 +1192,9 @@
   "suite": "S3-SUB"
  },
  "139": {
-  "status": "Chờ",
+  "status": "N/A",
   "actual": "",
-  "note": "Chờ PO: đổi số lượt/ngày (Q) trên CMS",
+  "note": "Chấm từ bằng chứng/code: Bỏ theo yêu cầu user 25/10: case cần PO đổi số lượt/ngày (Q) trên CMS.",
   "evidence": [],
   "suite": "S7-CMS"
  },
