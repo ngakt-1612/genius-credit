@@ -1,0 +1,54 @@
+{
+ "4": {
+  "status": "FAIL",
+  "why": "Chấm tay từ ảnh: nút Upgrade hiển thị 'Pro' + icon ✨ (Localizable home_button_upgrade='Pro', ✨ là icon) — Expected mục 3 cấm 'Pro ✨' (bug Round 2 #4); test đọc chữ không thấy ✨ nên tự chấm PASS."
+ },
+ "143": {
+  "status": "PASS",
+  "why": "Ghi chú: hasShownTopupOfferToday (CreditQuotaBalanceProvider.swift:56–62) trả false khi hôm nay chưa chào lần nào, không xét max → mọi giá trị max (kể cả 0 / -1 / 'abc') vẫn cho hiện offer lần đầu trong ngày; hành vi đo được = default code 1. Với '-1' app LƯU -1 (khác 0/'abc' bị bỏ qua) nhưng không quan sát được khác biệt."
+ },
+ "147": {
+  "status": "Lệch spec",
+  "why": "enable_topup=false (Debug xác nhận): 413 vẫn hiện Get More; chuỗi free vẫn chào màn topup offer (PaywallView.swift:290 chỉ xét hasShownTopupOfferToday, không xét enable_topup); trong khi dialog 481 bị ẩn (OutOfQuotaDialog.swift:38–41 'PO chốt') và màn 214 không có gói + từ chối mua (CreditQuotaBalanceProvider.swift:37,88). Expected TC chưa định nghĩa (còn chữ ambiguity) → hỏi PO: tắt topup thì offer free & Get More có ẩn không."
+ },
+ "87": {
+  "status": "Cần xem",
+  "why": "Chạy lại 25/10 10:31 (free 0/0): Enhance → chọn ảnh → 'Analyze Photo' → paywall gói → đóng → app CHẠY TIẾP phân tích (không Last-chance, không màn topup 216) → màn 'AI Analysis Complete / Suggested Enhancements' với nút 'Apply All Suggestions'. Bước tạo ảnh thật là Apply — chưa bấm (test chưa có nhãn này) nên chưa biết chuỗi bán ở bước Apply. Theo Expected (đóng paywall → Last-chance → topup) thì ở bước Analyze: KHÔNG có Last-chance. Cần chạy bổ sung bấm Apply khi máy free."
+ },
+ "98": {
+  "status": "PASS",
+  "why": "Chấm tay: sau hết hạn 413=0, header về free, Generate vào chuỗi paywall (đúng cả 3 ý Expected). Test tự chấm FAIL vì snapshot Debug đọc trước khi app cập nhật còn isActive=true (cache). Quan sát: Weekly hết hạn 17:54:18 nhưng app đang mở foreground ~11′ sau (~18:05) mới nhận hết hạn — hỏi PO 'huỷ ngay' có yêu cầu nhận biết tức thì không."
+ },
+ "123": {
+  "status": "PASS",
+  "why": "Gộp 2 vế: RC ngày tương lai (2026-10-26) → tier=unlimitedV1 dù BE có sub apple-store (app quyết theo latestPurchase RevenueCat < mốc); RC hôm nay → tier=creditV3, quotaEnforced=true theo BE. Đo qua màn Debug Sub state + code GeniusApiVersionRouter.swift:90–131 — không bắt traffic (proxy ngoài phạm vi)."
+ },
+ "22": {
+  "status": "FAIL",
+  "why": "Grandfather (tier=unlimitedV1): Setting KHÔNG có hàng My Balance (SettingsView.swift:84 ẩn cố ý với user gen v1) → không có 413 'Unlimited' + Get More như Expected. Có thể là lệch spec có chủ đích của dev — hỏi PO."
+ },
+ "78": {
+  "status": "Lệch spec",
+  "why": "Chấm tay 25/10 12:37 (gen qua Enhance): mua từ 481 xong app CHẠY GEN TIẾP NGAY (ảnh lúc kill: màn Generating 15%) — không có màn 482 để kill 'trước khi gen chạy tiếp' như tiền đề TC (cùng gốc N099/N105: app không có màn 482). Kill lúc đang gen → lượt vừa mua đang bị giữ → mở lại 413=0. Lượt bị giữ có được hoàn sau 10′ không = nhóm N050 (Pending)."
+ },
+ "131": {
+  "status": "PASS",
+  "why": "Chấm tay: App User ID trước gỡ app = sau cài lại = 62007A49-D5B9-4F7E-BD43-81D58D1F64FA (log 'App uninstalled.' 25/10 12:40); test tự chấm FAIL do chuỗi ID đọc từ log dính '\\r'. deviceId lưu Keychain — GetDeviceIdProvider.swift:8–21, không dùng identifierForVendor."
+ },
+ "125": {
+  "status": "FAIL",
+  "why": "RC quota_grandfather_until rỗng (ép trong code, đi qua luật syncAllKeys): app bỏ qua chuỗi rỗng → giữ giá trị đã lưu 2026-10-24 (cài mới thì dùng default code 2026-08-11) → tier=creditV3, VẪN áp quota (ví 0 → 481). Expected: không áp quota cho ai. Code chủ ý ngược spec: GeniusApiVersionRouter.swift:99–101 'Rỗng hoặc parse fail → không grandfather ai' — hỏi PO chốt bên nào."
+ },
+ "144": {
+  "status": "PASS",
+  "why": "3 giá trị sai định dạng ('01/11/2026', 'abc', '2026-13-45') ép trong code: app LƯU nguyên chuỗi, parse fail → không grandfather ai → tier=creditV3, áp quota (ví 0 → 481). Với sub mua hôm nay, kết quả trùng với default code 2026-08-11 nên đạt Expected; lưu ý app không quay về giá trị default mà xử như 'không grandfather' (GeniusApiVersionRouter.swift:99–101)."
+ },
+ "126": {
+  "status": "Cần xem",
+  "why": "Phần app: App User ID = UUID do app sinh (62007A49-D5B9-4F7E-BD43-81D58D1F64FA, màn Debug), không phải $RCAnonymousID — đạt. Phần tra customer trên RevenueCat dashboard cần quyền dashboard — chưa đối chiếu."
+ },
+ "157": {
+  "status": "PASS",
+  "why": "Đọc từ code 2.9.0: không còn product id iip055.iap.3.99/9.99/14.99/24.99 nào trong iosApp (grep 24/10), không còn UI ví credit cũ. Kiểm trên UI Seedance cần tab Home (server lỗi 25/10)."
+ }
+}

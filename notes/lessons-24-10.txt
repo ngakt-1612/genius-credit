@@ -1,0 +1,12 @@
+Bài học 24/10 (Daily Quota vòng 2) — chép vào rules-and-lessons khi bàn giao
+1. CMS prod 24/10: Home không còn tab For You; Trending/New/Motion phần đầu toàn template Motion (mở tab Reel "Tap to use"). Thẻ style ảnh phải dò (test10_findI2IStyle) → env R2_I2I_STYLE; feed có Personalized Ranking nên tìm theo TÊN thẻ + cuộn dần, không cố định vị trí.
+2. Style i2i có thể cần 2 ảnh ("Upload 2 photos") → điền mọi ô "Upload Image N" trước khi chờ Generate.
+3. Mua GÓI sub sandbox 24/10 hiện sheet Apple "In-App Purchase" (nút identifier `footer` label "Subscribe", nằm trong cây AX của app) — phải tự bấm; mua topup vẫn tự xác nhận. (22/10 gói cũng tự xác nhận — hành vi sandbox đổi.)
+4. Hàng Setting (Debug "Sub state") nuốt chạm: chạm button chứa nhãn, lần sau chạm toạ độ / press 0.15s; giá trị bool trên màn Debug dạng "✅ true".
+5. Chip feed Home là StaticText không hittable → chạm toạ độ.
+6. Log xcodebuild in mỗi VERDICT ~20 lần → monitor/merge đọc file .verdicts, không đọc .log.
+7. Lỗi cài app ("Connection interrupted") làm test tiền đề (tiêu topup) không chạy → queue phải kiểm tiền đề (topup=0) trước test phụ thuộc, sai thì chạy lại/dừng; verdict sai tiền đề đổi đuôi .invalid.
+8. RC ép trong code: phải thay giá trị THÔ trong syncAllKeys (không ép sau sync) để mô phỏng đúng luật Firebase ("abc"→0 bỏ qua, chuỗi rỗng bỏ qua → giữ giá trị đã lưu).
+9. hasShownTopupOfferToday không xét max khi hôm nay chưa chào → max 0/-1 vẫn chào 1 lần/ngày.
+10. Nhãn nút Upgrade = "Pro" + icon ✨ (icon không có trong text) → chấm "Pro ✨" phải nhìn ảnh.
+11. Enhance (free): "Analyze Photo" mở paywall gói nhưng đóng vẫn chạy phân tích; bước tạo ảnh là "Apply All Suggestions" — Last-chance hiện SAU khi bấm Apply (user xác nhận 25/10). Chuỗi bán của Enhance phải đo từ Apply, không từ Analyze.

@@ -1,0 +1,51 @@
+--- /Users/kieunga/Downloads/IIP055-Genius-IOS-2.9.0/plans/261024-1517-genius-290-daily-quota-topup-round2/app-backup/RemoteConfigRepositoryImpl.swift.before-round2	2026-10-24 15:33:19
++++ /Users/kieunga/Downloads/IIP055-Genius-IOS-2.9.0/iosApp/Data/Repositories/RemoteConfig/RemoteConfigRepositoryImpl.swift	2026-10-25 12:58:11
+@@ -145,18 +145,21 @@
+         // is a legitimate value. So the source is checked instead: a feature meant to ship enabled
+         // stays enabled until an operator says otherwise.
+         RemoteConfigKeys.allBoolKeys.forEach { key in
++            if let raw = codeOverride(key.key) { save(["true", "1", "yes", "y", "t"].contains(raw.lowercased()), for: key); return }
+             let value = remoteConfig[key.key]
+             guard value.source == .remote else { return }
+             save(value.boolValue, for: key)
+         }
+         // String keys
+         RemoteConfigKeys.allStringKeys.forEach { key in
+-            let v = remoteConfig[key.key].stringValue
++            let v = codeOverride(key.key) ?? remoteConfig[key.key].stringValue
+             if !v.isEmpty { save(v, for: key) }
+         }
+         // Int keys
+         RemoteConfigKeys.allIntKeys.forEach { key in
+-            let v = Int(truncating: remoteConfig[key.key].numberValue)
++            // numberValue của Firebase parse chuỗi như NSString.doubleValue: "abc" → 0
++            let v = codeOverride(key.key).map { Int(($0 as NSString).doubleValue) }
++                ?? Int(truncating: remoteConfig[key.key].numberValue)
+             if v != 0 { save(v, for: key) }
+         }
+         // JSON keys
+@@ -222,6 +225,24 @@
+         #endif
+     }
+ 
++    // MARK: - Code override (UI test)
++
++    #if DEBUG
++    /// DEBUG-only: giá trị Remote Config ép cứng trong code cho autotest — sửa dict rồi build lại.
++    /// Giá trị là chuỗi thô như gõ trên Firebase console; `syncAllKeys()` dùng nó thay cho giá trị
++    /// Firebase trả về nên đi qua đúng luật parse (string rỗng / int ra 0 → giữ giá trị đã lưu).
++    static let codeOverrides: [String: String] = ["quota_grandfather_until": "2026-10-24T00:00:00Z"]
++    #endif
++
++    /// Chuỗi thô ép trong code thay cho giá trị Firebase trả về (chỉ DEBUG).
++    private func codeOverride(_ key: String) -> String? {
++        #if DEBUG
++        return Self.codeOverrides[key]
++        #else
++        return nil
++        #endif
++    }
++
+     // MARK: - Persist helpers
+ 
+     private func save(_ value: Bool, for key: RemoteConfigKey<Bool>) {

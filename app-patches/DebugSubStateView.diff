@@ -1,0 +1,18 @@
+--- /Users/kieunga/Downloads/IIP055-Genius-IOS-2.9.0/plans/261024-1517-genius-290-daily-quota-topup-round2/app-backup/DebugSubStateView.swift.before-round2	2026-10-24 15:40:07
++++ /Users/kieunga/Downloads/IIP055-Genius-IOS-2.9.0/iosApp/Features/Settings/Debug/DebugSubStateView.swift	2026-10-24 15:40:10
+@@ -1,5 +1,6 @@
+ #if DEBUG
+ import Factory
++import RevenueCat
+ import SwiftUI
+ 
+ // MARK: - DebugSubStateView
+@@ -136,6 +137,8 @@
+         return [
+             DebugStateSection(title: "Kết luận (EntitlementStore)", rows: [
+                 .init(label: "isPremium", value: bool(entitlement.isPremium)),
++                // App User ID RevenueCat = deviceId lưu Keychain — autotest đọc để so trước/sau gỡ app.
++                .init(label: "appUserID", value: Purchases.shared.appUserID),
+                 .init(label: "tier", value: entitlement.tier.rawValue),
+                 .init(label: "isChecked", value: bool(entitlement.isChecked)),
+                 .init(label: "isBackendResolved", value: bool(entitlement.isBackendResolved)),

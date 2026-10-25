@@ -1,0 +1,2 @@
+- N087: chạy bổ sung test05 có chờ hết 'Scanning Photo' rồi ghi tiếp chuỗi (máy free)
+- N098: đo trong test03 (chờ Weekly hết hạn trước khi mua Yearly)

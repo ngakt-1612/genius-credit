@@ -1,0 +1,1424 @@
+{
+ "1": {
+  "status": "PASS",
+  "actual": "KQ: subscriber còn lượt: badge=20 (Q=20) · nút Upgrade/Get Pro=false · topup=0",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test01_buyWeeklyFromHome-171603",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N001/N001-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "2": {
+  "status": "PASS",
+  "actual": "badge=23 · quota 20 + topup 3 = 23",
+  "note": "KQ autotest 22/10 (TC cũ #2, lượt sub-test02_subBuyPullAndReadThreePlaces-163527)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N002/N002-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "3": {
+  "status": "PASS",
+  "actual": "KQ: hết 2 ví: 413=0 · badge=ẩn · Upgrade/Get Pro=false",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test08_exhaustQuotaThenBuy-183356",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N003/N003-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "4": {
+  "status": "FAIL",
+  "actual": "KQ: badge=ẩn · nút Upgrade/Get Pro=true ('Pro') · chữ 'Pro ✨'=false · topup=0",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test03_freeNoTopupHeader-162437 · CHẤM TAY: Chấm tay từ ảnh: nút Upgrade hiển thị 'Pro' + icon ✨ (Localizable home_button_upgrade='Pro', ✨ là icon) — Expected mục 3 cấm 'Pro ✨' (bug Round 2 #4); test đọc chữ không thấy ✨ nên tự chấm PASS.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N004/N004-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N004/N004-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "5": {
+  "status": "FAIL",
+  "actual": "KQ: user không gói có topup: badge=2 · nút Upgrade/Get Pro=true · tier=noSubscription · apple isActive=false · topup=2 (user từng có sub, đã hết hạn)",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test01_expiredSubWithTopup-161157",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N005/N005-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N005/N005-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N005/N005-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "6": {
+  "status": "PASS",
+  "actual": "KQ: badge=ẩn · Upgrade/Get Pro=false · RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N006/N006-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N006/N006-2.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "7": {
+  "status": "PASS",
+  "actual": "tap badge → 413=true · thẻ 23 vs badge 23",
+  "note": "KQ autotest 22/10 (TC cũ #7, lượt sub-test02_subBuyPullAndReadThreePlaces-163527)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N007/N007-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "8": {
+  "status": "PASS",
+  "actual": "gen result → badge 20 → 19 không mở lại app",
+  "note": "KQ autotest 22/10 (TC cũ #8, lượt sub-test04_fullQuotaHeaderAndFlatCount-164610)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N008/N008-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "9": {
+  "status": "PASS",
+  "actual": "badge 18 → 19 ngay khi về Home (spec 20 → 21)",
+  "note": "KQ autotest 22/10 (TC cũ #9, lượt sub-test05_pullBuyUpdatesBadge-165208)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N009/N009-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "10": {
+  "status": "PASS",
+  "actual": "hết lượt cuối: badge=ẩn · pill='không có pill'",
+  "note": "KQ autotest 22/10 (TC cũ #10, lượt sub-test10_quota1-173504) · chấm lại theo Expected mới: Expected mới bỏ pill: badge ẩn + không có nút Upgrade/Get Pro — đúng.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N010/N010-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "11": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "12": {
+  "status": "FAIL",
+  "actual": "KQ: sub hết hạn còn topup: badge=2 · nút Upgrade/Get Pro=true ('Pro') · tier=noSubscription · apple isActive=false · topup=2",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test01_expiredSubWithTopup-161157",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N012/N012-6.png"
+  ],
+  "suite": "S5-EXPIRE"
+ },
+ "13": {
+  "status": "PASS",
+  "actual": "KQ: mua Weekly rời paywall=true · nút Upgrade/Get Pro còn=false · badge=20 · 413=20 (quota 20, topup 0) · Q(quotaLimit)=20 · tier=creditV3 · latestPurchase=2026-10-24 17:18:18 · productId=iip055.weekly.9.99 · ví trước 0/topup 0",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test01_buyWeeklyFromHome-171603",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N013/N013-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N013/N013-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N013/N013-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N013/N013-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N013/N013-5.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "14": {
+  "status": "FAIL",
+  "actual": "offline mở lại app: badge=ẩn (số online 9) · pill='không có pill' (spec mơ hồ #7)",
+  "note": "KQ autotest 22/10 (TC cũ #14, lượt sub-test07_quota10-170639) · chấm lại theo Expected mới: Expected mới: offline hiện số cache. Thực tế badge ẩn (số online 9).",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N014/N014-1.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "15": {
+  "status": "PASS",
+  "actual": "My Balance ngay dưới Rate us=true · trong nhóm General=true · cùng style (x, cao)=true · (chạy với free user; layout không phụ thuộc loại user)",
+  "note": "KQ autotest 22/10 (TC cũ #15, lượt free-test02_headerSettingMyBalanceTopup-153427)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N015/N015-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "16": {
+  "status": "PASS",
+  "actual": "free (topup 0): dòng My Balance hiện + chạm → 413=true (các loại user khác: chạy ở phase sau)",
+  "note": "KQ autotest 22/10 (TC cũ #16, lượt free-test02_headerSettingMyBalanceTopup-153427)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N016/N016-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N016/N016-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N016/N016-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "17": {
+  "status": "PASS",
+  "actual": "về Setting=true · vị trí dòng My Balance trước 515 / sau 515",
+  "note": "KQ autotest 22/10 (TC cũ #17, lượt free-test02_headerSettingMyBalanceTopup-153427)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N017/N017-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "18": {
+  "status": "FAIL",
+  "actual": "subscriber q20+t3: thẻ 23 · nhãn 'Today's available creations' (spec 'Available creations') · My Balance · Today's available creations · 23 · Creations · Get More · Back · Get More",
+  "note": "KQ autotest 22/10 (TC cũ #18, lượt sub-test02_subBuyPullAndReadThreePlaces-163527)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N018/N018-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "19": {
+  "status": "FAIL",
+  "actual": "chữ vi phạm trên 413: Today's available creations",
+  "note": "KQ autotest 22/10 (TC cũ #19, lượt free-test02_headerSettingMyBalanceTopup-153427)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N019/N019-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N019/N019-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N019/N019-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "20": {
+  "status": "PASS",
+  "actual": "quota 15: thẻ 15 · dòng nhắc: không",
+  "note": "KQ autotest 22/10 (TC cũ #20, lượt sub-test06_quota15-165630)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N020/N020-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "21": {
+  "status": "PASS",
+  "actual": "sub q0 t0 → 413=0",
+  "note": "KQ autotest 22/10 (TC cũ #21, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N021/N021-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N021/N021-2.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "22": {
+  "status": "FAIL",
+  "actual": "KQ: 413: 'Unlimited'=false · Get More=false · chữ: Setting không có hàng My Balance=true · RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203 · CHẤM TAY: Grandfather (tier=unlimitedV1): Setting KHÔNG có hàng My Balance (SettingsView.swift:84 ẩn cố ý với user gen v1) → không có 413 'Unlimited' + Get More như Expected. Có thể là lệch spec có chủ đích của dev — hỏi PO.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N022/N022-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "23": {
+  "status": "PASS",
+  "actual": "Setting → My Balance → Get More → màn native 'Top-up creations' (topup_pw_view{entry_point=my_balance, package_count=1}). Mã paywall 227: màn native không gửi mã/placement trong event — gói lấy từ placement credit (offering 216_0.99).",
+  "note": "KQ autotest 22/10 (TC cũ #23, lượt buy-rerun005-162915)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N023/N023-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N023/N023-2.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "24": {
+  "status": "FAIL",
+  "actual": "Home → tap badge → 413 (quota_balance_view source=home) → Get More → màn 'Top-up creations' (đúng màn). Event topup_pw_view entry_point='my_balance' — spec 'home_badge'.",
+  "note": "KQ autotest 22/10 (TC cũ #24, lượt sub-test08_quota5-172226)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N024/N024-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "25": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy A + máy B cùng Apple ID",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "26": {
+  "status": "PASS",
+  "actual": "back → 413=true · thẻ 10 (quota 10)",
+  "note": "KQ autotest 22/10 (TC cũ #26, lượt sub-test07_quota10-170639)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N026/N026-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "27": {
+  "status": "FAIL",
+  "actual": "413 offline (Airplane Mode, mở lại app): thẻ hiện '0' trong khi số dư thật 9 — số 0 giả, không có thông báo cần mạng. Get More vẫn hiện.",
+  "note": "KQ autotest 22/10 (TC cũ #27, lượt sub-test07_quota10-170639) · chấm lại theo Expected mới: Expected mới: số cache/placeholder. Thực tế thẻ hiện \"0\" giả trong khi số dư thật 9.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N027/N027-1.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "28": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "29": {
+  "status": "PASS",
+  "actual": "i2i: sạch · Remove Object: sạch [Remove Object · Tap to upload photo · Supports JPG, PNG up to 10MB · or choose from · Camera] · Restore: sạch [Restore Photo · Tap to upload photo · Supports JPG, PNG up to 10MB · or choose from · Camera] · Enhance Photo: sạch [Enhance Photo · Tap to upload photo · Supports JPG, PNG up to 10MB · or choose from · Camera] (i2v/motion/seedance/tryon/looks/video: phase sau) · chạy với free user",
+  "note": "KQ autotest 22/10 (TC cũ #29, lượt free-rerun029-154311)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N029/N029-6.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "30": {
+  "status": "PASS",
+  "actual": "t3/q20 → gen result → t2/q20 · 413 23 → 22",
+  "note": "KQ autotest 22/10 (TC cũ #30, lượt sub-test03_genConsumesTopupFirst-164006)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "31": {
+  "status": "PASS",
+  "actual": "gen result: quota 5 → 4, topup 0, badge 4",
+  "note": "KQ autotest 22/10 (TC cũ #31, lượt sub-test08_quota5-172226)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N031/N031-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N031/N031-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N031/N031-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "32": {
+  "status": "PASS",
+  "actual": "quota 0 topup 2 bấm Generate → result (481=false) · topup → 1",
+  "note": "KQ autotest 22/10 (TC cũ #32, lượt sub-test13_pullWhenExhaustedThenGen-175557)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "33": {
+  "status": "PASS",
+  "actual": "Ví q20 + t1 → gen i2i thành công → t0 / q20 (lượt topup bị trừ trước dù quota đầy), không có câu nhắc thứ tự tiêu.",
+  "note": "KQ autotest 22/10 (TC cũ #33, lượt sub-test03_genConsumesTopupFirst-164006)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "34": {
+  "status": "PASS",
+  "actual": "i2i: 20 → 19 (badge) · i2v result: → 18 (mỗi lần −1) · feature khác (enhance/restore/motion/seedance/tryon/looks/video): chưa chạy",
+  "note": "KQ autotest 22/10 (TC cũ #34, lượt sub-test04_fullQuotaHeaderAndFlatCount-164610)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N034/N034-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N034/N034-2.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "35": {
+  "status": "PASS",
+  "actual": "KQ: Remove Object: tạo xong=true (bấm [\"Next\", \"Remove\"]) · 413 16 → 15 (spec −1 lượt)",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-deduct-removeobject-rerun-111738",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "36": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "37": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy A + máy B cùng Apple ID",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "38": {
+  "status": "Lệch spec",
+  "actual": "bấm back ở Generating: dialog Keep Waiting=false / Leave Anyway=false · màn: For You · Trending · New · Motion · Spotlight Photoshoot · Genius · 9 · Creating your masterpiece… (2.9.0 đổi sang chạy nền khi rời màn)",
+  "note": "KQ autotest 22/10 (TC cũ #38, lượt sub-test07_quota10-170639)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N038/N038-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "39": {
+  "status": "Lệch spec",
+  "actual": "Bấm back ở màn Generating (video, quota 10): không có dialog Keep Waiting / Leave Anyway — app về Home, lượt gen chạy nền ('Creating your masterpiece…' trên khay), 413 10 → 9 (trừ 1 lần). Không có lựa chọn 'Leave Anyway' để kiểm COMMIT/huỷ.",
+  "note": "KQ autotest 22/10 (TC cũ #39, lượt sub-test07_quota10-170639)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N039/N039-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N039/N039-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N039/N039-3.png"
+  ],
+  "suite": "X-BE"
+ },
+ "40": {
+  "status": "Lệch spec",
+  "actual": "Bấm back ở màn Generating (video, quota 10): không có dialog Keep Waiting / Leave Anyway — app về Home, lượt gen chạy nền ('Creating your masterpiece…' trên khay), 413 10 → 9 (trừ 1 lần). Không có lựa chọn 'Leave Anyway' để kiểm COMMIT/huỷ.",
+  "note": "KQ autotest 22/10 (TC cũ #40, lượt sub-test07_quota10-170639)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N040/N040-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N040/N040-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N040/N040-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "41": {
+  "status": "Cần xem",
+  "actual": "rời màn Generating (không có Keep Waiting) → video chạy nền · 413 10 → 9 (chỉ trừ 1)",
+  "note": "KQ autotest 22/10 (TC cũ #41, lượt sub-test07_quota10-170639)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N041/N041-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N041/N041-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N041/N041-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "42": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "43": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "44": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "45": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần ảnh mẫu bị chặn NSFW do team cung cấp (không tự tạo nội dung NSFW)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "46": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "47": {
+  "status": "FAIL",
+  "actual": "Quota 4 → bấm Generate i2i → bật Airplane 20s → tắt: màn 'Generation Failed · Something went wrong while enhancing your photo. Please try again.' (copy nói 'enhancing' trên luồng i2i). Không có toast 483 hoàn lượt; 413 4 → 3 (lượt bị trừ). Event: i2i_gen_fail_view, không có credit_refund.",
+  "note": "KQ autotest 22/10 (TC cũ #47, lượt sub-test08_quota5-172226)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N047/N047-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N047/N047-2.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "48": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending: kill app giữa gen rồi chờ BE auto-release 10′ — user chỉ chạy case không chờ lâu (24/10 17:41)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "49": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending: như N048 (đo lúc 9′)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "50": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending: như N048",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "51": {
+  "status": "PASS",
+  "actual": "hết 2 ví bấm Generate → 481=true (không request gen: cần proxy, chưa kiểm)",
+  "note": "KQ autotest 22/10 (TC cũ #51, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N051/N051-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N051/N051-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N051/N051-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "52": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy A + máy B cùng Apple ID",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "53": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "54": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "55": {
+  "status": "PASS",
+  "actual": "5 lần bấm nhanh: kết quả=true · 481 chen=false · 413 sau=0 (chỉ 1 job)",
+  "note": "KQ autotest 22/10 (TC cũ #55, lượt sub-test10_quota1-173504)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N055/N055-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "56": {
+  "status": "PASS",
+  "actual": "offline bấm Generate: paywall=false · 481=false · thông báo='No internet connection. Please try again.' · màn: Image to Image · Generate · No internet connection. Please try again. · Back · Close · Generate",
+  "note": "KQ autotest 22/10 (TC cũ #56, lượt sub-offline056-181420)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N056/N056-1.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "57": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chưa chạy: đổi ngày giờ hệ thống trên máy test (ảnh hưởng sandbox & lượt chạy khác) — cần người đồng ý",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "58": {
+  "status": "Lệch spec",
+  "actual": "481: Image to Image · Generate · Daily limit reached · Your creations renew tomorrow. Need more today? · Back · Close (spec 'Bạn đã hết lượt hôm nay' / 'Mua thêm để tiếp tục tạo ngay.' / 'Mua thêm' · 'Để mai'; app có câu 'renew tomorrow' — spec cấm câu nói bao giờ lượt về)",
+  "note": "KQ autotest 22/10 (TC cũ #58, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N058/N058-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "59": {
+  "status": "PASS",
+  "actual": "Maybe later → ở lại Upload, ảnh còn=true · không mở topup",
+  "note": "KQ autotest 22/10 (TC cũ #59, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N059/N059-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "60": {
+  "status": "PASS",
+  "actual": "bấm Generate lần nữa → 481 hiện lại=true",
+  "note": "KQ autotest 22/10 (TC cũ #60, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N060/N060-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N060/N060-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N060/N060-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "61": {
+  "status": "FAIL",
+  "actual": "481 (i2i) → 'Get more' → mở paywall RevenueCat topup placement của i2i ('Still not ready to subscribe?', 0.99$, CTA 'Get 1 creation'). Event: topup_oq_buy_click{feature_name=I2I} → topup_paywall_view{feature_name=I2I, purchase_index=12} — KHÔNG có param entry_point=dialog_481; mã paywall không có trong event. Feature khác (enhance/i2v/restore/...): chưa chạy. Mã paywall: iap_view source=iap_217_topup_i2i_paywall, offering 216_0.99 — đúng mã 217 cho i2i.",
+  "note": "KQ autotest 22/10 (TC cũ #61, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N061/N061-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "62": {
+  "status": "PASS",
+  "actual": "bấm Generate (free, topup 0) → paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly · có 481=false",
+  "note": "KQ autotest 22/10 (TC cũ #62, lượt free-rc091b-162731)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N062/N062-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N062/N062-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N062/N062-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "63": {
+  "status": "PASS",
+  "actual": "KQ: grandfather gen > Q: 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test06_grandfatherGenBeyondQ-112506",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "64": {
+  "status": "PASS",
+  "actual": "3 lần bấm nhanh Get more → còn màn bán chồng sau khi đóng 1 lần=false",
+  "note": "KQ autotest 22/10 (TC cũ #64, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N064/N064-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N064/N064-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N064/N064-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "65": {
+  "status": "Lệch spec",
+  "actual": "màn mở từ 481: App Store · Editor's Choice · Still not ready to subscribe? · Includes 1 AI creation · One-time purchase only · No subscription or auto-renewal · Instant access after purchase · 0.99$ · one-time purchase · I (spec 'Top-up creations' · '0 top-up creations left' · 'Choose a Package' · '1 Creation — One-time purchase — $0.99' · 'Purchase')",
+  "note": "KQ autotest 22/10 (TC cũ #65, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N065/N065-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N065/N065-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N065/N065-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "66": {
+  "status": "Lệch spec",
+  "actual": "413=23 · màn topup '3 topup creations' (spec '3 top-up creations left')",
+  "note": "KQ autotest 22/10 (TC cũ #66, lượt sub-test02_subBuyPullAndReadThreePlaces-163527) · chấm lại theo Expected mới: Màn topup \"3 topup creations\" vs spec \"3 top-up creations left\".",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N066/N066-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "67": {
+  "status": "FAIL",
+  "actual": "Subscriber hết 2 ví → Generate → 481 → Get more → paywall topup i2i (mã 217) → mua → app rời paywall, gen i2i TỰ CHẠY TIẾP (Generating 34% → kết quả) với đúng ảnh/style; topup sau = 0. Không có màn 482 riêng.",
+  "note": "KQ autotest 22/10 (TC cũ #67, lượt sub-rerun067-180740) · chấm lại theo Expected mới: Bỏ ambiguity → mục 1 \"Hiển thị 482\" chấm chặt: không có màn 482 riêng (đồng bộ TC-099/105); gen tự chạy tiếp + topup 0 đúng.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N067/N067-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N067/N067-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N067/N067-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N067/N067-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N067/N067-5.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "68": {
+  "status": "PASS",
+  "actual": "Get More hiện khi còn quota=true · mua → 413 15 → 16 · không chạy gen",
+  "note": "KQ autotest 22/10 (TC cũ #68, lượt sub-test06_quota15-165630)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N068/N068-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "69": {
+  "status": "PASS",
+  "actual": "quota 0, topup 1 → mua pull → 413 2 (spec 1 → 2)",
+  "note": "KQ autotest 22/10 (TC cũ #69, lượt sub-test13_pullWhenExhaustedThenGen-175557)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "70": {
+  "status": "PASS",
+  "actual": "subscriber mua liên tiếp 2 lần: [true, true] · topup 1 → 3 (Consumable, không 'already purchased')",
+  "note": "KQ autotest 22/10 (TC cũ #70, lượt sub-test02_subBuyPullAndReadThreePlaces-163527)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N070/N070-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N070/N070-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N070/N070-3.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "71": {
+  "status": "PASS",
+  "actual": "back → Upload, ảnh còn=true · 481 hiện lại=false",
+  "note": "KQ autotest 22/10 (TC cũ #71, lượt sub-test11_exhausted481-174238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N071/N071-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "72": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: sandbox trên máy tự xác nhận mua → cần tài khoản sandbox khác (huỷ sheet/thẻ lỗi/Ask to Buy) hoặc StoreKit Configuration",
+  "evidence": [],
+  "suite": "S9-STOREKIT"
+ },
+ "73": {
+  "status": "PASS",
+  "actual": "Airplane trước khi bấm Purchase: ở lại màn topup=true · thông báo='Purchase Failed' · số dư 1 → 1 (spec fallback ERR_MON_002)",
+  "note": "KQ autotest 22/10 (TC cũ #73, lượt sub-offline073-181614)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N073/N073-1.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "74": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: sandbox trên máy tự xác nhận mua → cần tài khoản sandbox khác (huỷ sheet/thẻ lỗi/Ask to Buy) hoặc StoreKit Configuration",
+  "evidence": [],
+  "suite": "S9-STOREKIT"
+ },
+ "75": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: sandbox trên máy tự xác nhận mua → cần tài khoản sandbox khác (huỷ sheet/thẻ lỗi/Ask to Buy) hoặc StoreKit Configuration",
+  "evidence": [],
+  "suite": "S9-STOREKIT"
+ },
+ "76": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "77": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "78": {
+  "status": "Lệch spec",
+  "actual": "KQ: kill sau mua=true · 413 mở lại=0 · flow gen dở được khôi phục=false",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test09_buyThenKillBeforeResume-123504 · CHẤM TAY: Chấm tay 25/10 12:37 (gen qua Enhance): mua từ 481 xong app CHẠY GEN TIẾP NGAY (ảnh lúc kill: màn Generating 15%) — không có màn 482 để kill 'trước khi gen chạy tiếp' như tiền đề TC (cùng gốc N099/N105: app không có màn 482). Kill lúc đang gen → lượt vừa mua đang bị giữ → mở lại 413=0. Lượt bị giữ có được hoàn sau 10′ không = nhóm N050 (Pending).",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N078/N078-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N078/N078-2.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "79": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: sandbox trên máy tự xác nhận mua → cần tài khoản sandbox khác (huỷ sheet/thẻ lỗi/Ask to Buy) hoặc StoreKit Configuration",
+  "evidence": [],
+  "suite": "S9-STOREKIT"
+ },
+ "81": {
+  "status": "PASS",
+  "actual": "bấm Purchase 3 lần nhanh: 413 0 → 1 (kỳ vọng +1) · popup xác nhận thứ 2=false · xong=true · popup hệ thống OK=true · sau mua: My Balance · Today's available creations · 1 · Creations · Get More · Back · Get More",
+  "note": "KQ autotest 22/10 (TC cũ #81, lượt buy-rerun081-181134)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N081/N081-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "82": {
+  "status": "PASS",
+  "actual": "KQ: badge=ẩn · gen không giới hạn · mua topup chủ động=không có đường (My Balance ẩn) · 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test06_grandfatherGenBeyondQ-112506",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N082/N082-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "83": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chưa chạy: cần sub grandfather gia hạn qua mốc (mốc RC nằm giữa 2 lần gia hạn sandbox) — dựng được bằng RC ép trong code, chưa làm",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "84": {
+  "status": "Lệch spec",
+  "actual": "Màn topup chào free user (RC paywall): 'Still not ready to subscribe?' · 'Includes 1 AI creation' · 'One-time purchase only' · 'No subscription or auto-renewal' · 'Instant access after purchase' · gói '0.99$ one-time purchase' · CTA 'Get 1 creation' · nút X (không có 'Không, cảm ơn'). Spec: 'Chỉ muốn thử lần này?' / 'Mua lẻ 1 lần tạo.' / '$0.99 — Tạo 1 lần' / 'Không, cảm ơn'. Giá hiển thị 0.99$ trong khi màn topup native & paywall sub hiển thị VND.",
+  "note": "KQ autotest 22/10 (TC cũ #84, lượt free-test01_freeChainFirstOfDay-153238) · chấm lại theo Expected mới: Copy app khác spec (EN \"Still not ready to subscribe?\" / \"Get 1 creation\").",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N084/N084-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N084/N084-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N084/N084-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "85": {
+  "status": "PASS",
+  "actual": "Chuỗi: paywall feature i2i ('20 AI creations every day…' Weekly/Yearly) → Last-chance ('Limited Offer: 50% OFF Today', 199.000đ/week) → màn topup ('Still not ready to subscribe?'). Phần 'BE ghi nhận đã hiện offer': app lưu local UserDefaults (CreditQuotaBalanceProvider.markTopupOfferShownToday), BE không kiểm được.",
+  "note": "KQ autotest 22/10 (TC cũ #85, lượt free-test01_freeChainFirstOfDay-153238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N085/N085-6.png"
+  ],
+  "suite": "X-BE"
+ },
+ "86": {
+  "status": "PASS",
+  "actual": "i2i: đóng paywall feature (iap_view source=iap_206_i2i_paywall, offering 206_9.99_39.99) → Last-chance iap_view source=iap_222_lastchance_i2i_paywall, offering 202_5.99_14.99 — đúng mã 222. Feature khác (i2v 223, restore 224, remove 225, motion 226, seedance 232, tryon 233, looks 234, video 235): chưa chạy.",
+  "note": "KQ autotest 22/10 (TC cũ #86, lượt buy-rc163-162339)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N086/N086-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N086/N086-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N086/N086-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "87": {
+  "status": "Cần xem",
+  "actual": "KQ: chuỗi Enhance: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly → khác: Scanning Photo · Analyzing your photo · Our AI is detecting areas that can be enhanced · Face detection · Analyzing lighting conditions · Detecting imperfections · Back → sau phân tích: khác · Analyzing Photo · AI Analysis Complete · Suggested Enhancements · 5 Issues · Enhance Brightness · Photo appears underexposed",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-n087-103109 · CHẤM TAY: Chạy lại 25/10 10:31 (free 0/0): Enhance → chọn ảnh → 'Analyze Photo' → paywall gói → đóng → app CHẠY TIẾP phân tích (không Last-chance, không màn topup 216) → màn 'AI Analysis Complete / Suggested Enhancements' với nút 'Apply All Suggestions'. Bước tạo ảnh thật là Apply — chưa bấm (test chưa có nhãn này) nên chưa biết chuỗi bán ở bước Apply. Theo Expected (đóng paywall → Last-chance → topup) thì ở bước Analyze: KHÔNG có Last-chance. Cần chạy bổ sung bấm Apply khi máy free.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N087/N087-6.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "88": {
+  "status": "PASS",
+  "actual": "chuỗi: paywall → lastchance → generating · gen xong=true · topup 1 → 0 (nguồn: mua pull vừa xong)",
+  "note": "KQ autotest 22/10 (TC cũ #88, lượt buy-rerun088b-160210)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N088/N088-6.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "89": {
+  "status": "FAIL",
+  "actual": "482 sau mua offer: không có màn 482 (chỉ popup hệ thống) · gen i2i tự chạy tiếp=true · topup sau=0",
+  "note": "KQ autotest 22/10 (TC cũ #89, lượt buy-rc163-162339)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N089/N089-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N089/N089-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "90": {
+  "status": "PASS",
+  "actual": "Đóng màn topup (nút X) → về Upload i2i, ảnh/style giữ, không gen. 'Tính là đã hiện hôm nay' do app đếm local (bộ đếm UserDefaults theo ngày máy) — BE không ghi.",
+  "note": "KQ autotest 22/10 (TC cũ #90, lượt free-test01_freeChainFirstOfDay-153238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N090/N090-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N090/N090-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N090/N090-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N090/N090-4.png"
+  ],
+  "suite": "X-BE"
+ },
+ "91": {
+  "status": "PASS",
+  "actual": "RC từ file topup_offer_max_per_day=1 (offer đã chào trong ngày): 2 lần Generate liên tiếp → paywall → Last-chance → về Upload, KHÔNG chào topup, không gen, ảnh giữ nguyên; không có thông báo cho user (spec mơ hồ).",
+  "note": "KQ autotest 22/10 (TC cũ #91, lượt free-rc091b-162731)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N091/N091-6.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "92": {
+  "status": "PASS",
+  "actual": "đã mua pull hôm nay + dùng hết → bấm Generate: paywall → lastchance → topup · màn topup offer hiện=true",
+  "note": "KQ autotest 22/10 (TC cũ #92, lượt buy-rc163-162339)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N092/N092-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N092/N092-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N092/N092-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "93": {
+  "status": "PASS",
+  "actual": "KQ: lần 1: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly → lastchance: 🎉 Limited Offer: 50% OFF Today · Generate unlimited hairstyles with AI · Cancel anytime. · Close · Now only 199.000đ/week · Claim limited time offer · Restore  · Terms → topup: App Store · Editor's Choice · Still not ready to subscribe? · Includes 1 AI creation · One-time purchase only · No subscription or auto-renewal · Instant access after purchase · 0.99$ · kill app · mở lại: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly → lastchance: 🎉 Limited Offer: 50% OFF Today · Generate unlimited hairstyles with AI · Cancel anytime. · Close · Now only 199.000đ/week · Claim limited time offer · Restore  · Terms → topup: App Store · Editor's Choice · Still not ready to subscribe? · Includes 1 AI creation · One-time purchase only · No subscription or auto-renewal · Instant access after purchase · 0.99$",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test06_killAtTopupOffer-163014",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N093/N093-6.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "94": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "95": {
+  "status": "PASS",
+  "actual": "KQ: offline bấm Generate: thông báo='No internet connection. Please try again.' · paywall/Last-chance/topup mở=false",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test04_offlineBlocksBeforeChain-162603",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N095/N095-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N095/N095-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N095/N095-3.png"
+  ],
+  "suite": "S4-NET"
+ },
+ "96": {
+  "status": "PASS",
+  "actual": "free có topup 2 mua gói rồi gen 1 lần (gen nối tiếp=true) → topup 1, quota 20 (spec topup −1, quota 20) · không có câu nhắc thứ tự tiêu",
+  "note": "KQ autotest 22/10 (TC cũ #96, lượt sub-test01_buySubOnFeaturePaywall-163149)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N096/N096-1.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "97": {
+  "status": "PASS",
+  "actual": "KQ: chuỗi: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly → lastchance: 🎉 Limited Offer: 50% OFF Today · Generate unlimited hairstyles with AI · Cancel anytime. · Close · Now only 199.000đ/week · Claim limited time offer · Restore  · Terms → lastchance: 🎉 Limited Offer: 50% OFF Today · Generate unlimited hairstyles with AI · Cancel anytime. · Close · Now only 199.000đ/week · Claim limited time offer · Restore  · Terms → generating: Generating · Building your visual · Composing frames, detail, and motion. · 34 · % · Rendering · Usually takes 10–15 seconds · Back · gen=result · topup 2 → 1",
+  "note": "Autotest vòng 2 24/10 · lượt r2free-test01_expiredSubWithTopup-161157",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N097/N097-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N097/N097-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N097/N097-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N097/N097-4.png"
+  ],
+  "suite": "S5-EXPIRE"
+ },
+ "98": {
+  "status": "PASS",
+  "actual": "KQ: Weekly còn quota 19 (topup 0) · chờ 30′ tới hết hạn (isActive=true, expiration=2026-10-24 17:54:18) · 413 sau hết hạn=0 · Generate: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test03_buyYearly-173027 · CHẤM TAY: Chấm tay: sau hết hạn 413=0, header về free, Generate vào chuỗi paywall (đúng cả 3 ý Expected). Test tự chấm FAIL vì snapshot Debug đọc trước khi app cập nhật còn isActive=true (cache). Quan sát: Weekly hết hạn 17:54:18 nhưng app đang mở foreground ~11′ sau (~18:05) mới nhận hết hạn — hỏi PO 'huỷ ngay' có yêu cầu nhận biết tức thì không.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N098/N098-6.png"
+  ],
+  "suite": "S5-EXPIRE"
+ },
+ "99": {
+  "status": "FAIL",
+  "actual": "sau mua lần đầu: màn 482 = không có — chỉ popup hệ thống + pop về 413 (TopupCreationsViewModel.trackPurchaseSuccess: 'Màn 482 = popup xác nhận sẵn có của hệ thống')",
+  "note": "KQ autotest 22/10 (TC cũ #99, lượt buy-rerun072-161528) · chấm lại theo Expected mới: Không có màn 482 — chỉ popup hệ thống.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N099/N099-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N099/N099-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "100": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending: toast 483 sau auto-release 10′ (như N048)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "101": {
+  "status": "FAIL",
+  "actual": "mua lần sau: 482 = không / không — không có màn hiển thị N và tổng tiền",
+  "note": "KQ autotest 22/10 (TC cũ #101, lượt buy-rerun005-162915)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N101/N101-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N101/N101-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "102": {
+  "status": "FAIL",
+  "actual": "lần mua thứ 2 (pull rồi offer): 482 = không có — không đọc được N / tổng tiền",
+  "note": "KQ autotest 22/10 (TC cũ #102, lượt buy-rc163-162339)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N102/N102-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N102/N102-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N102/N102-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "103": {
+  "status": "FAIL",
+  "actual": "Không có màn 482 sau khi mua topup (chỉ popup hệ thống 'You're all set') → không có nút 'Xem gói năm' để bấm; không có event upsell_after_topup_click.",
+  "note": "KQ autotest 22/10 (TC cũ #103, lượt buy-rc163-162339)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N103/N103-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N103/N103-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N103/N103-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "104": {
+  "status": "PASS",
+  "actual": "mua pull: không có 482 nên không có nút 'Tiếp tục tạo' — app pop về 413 (spec mơ hồ #10)",
+  "note": "KQ autotest 22/10 (TC cũ #104, lượt buy-rerun072-161528) · chấm lại theo Expected mới: Expected mới \"về 413\": mua pull pop về 413 — đúng.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N104/N104-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N104/N104-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N104/N104-3.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "105": {
+  "status": "FAIL",
+  "actual": "Subscriber mua topup (pull, TC-068/070/009): không có màn 482 xác nhận — chỉ popup hệ thống 'You're all set' rồi app pop về 413.",
+  "note": "KQ autotest 22/10 (TC cũ #105, lượt sub-test06_quota15-165630) · chấm lại theo Expected mới: Không có màn 482 xác nhận — chỉ popup hệ thống \"You're all set\".",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N105/N105-1.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "106": {
+  "status": "FAIL",
+  "actual": "Không có màn 482 để đọc N; bộ đếm topupPurchaseCount là biến trong bộ nhớ (CreditQuotaBalanceProvider.swift:33) — về 0 mỗi lần mở app, nên không thể giữ N qua gỡ/cài lại.",
+  "note": "KQ autotest 22/10 (TC cũ #106, lượt đọc code)",
+  "evidence": [],
+  "suite": "S10-DESTRUCT"
+ },
+ "108": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "109": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "110": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "111": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "112": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "114": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "115": {
+  "status": "Pending",
+  "actual": "",
+  "note": "Pending (user 24/10 17:41): cần khung 06:50–07:10 sáng (mốc reset 00:00 UTC) — chưa test",
+  "evidence": [],
+  "suite": "S8-RESET"
+ },
+ "116": {
+  "status": "PASS",
+  "actual": "a: RC grandfather = hôm nay: header badge=20 · Upgrade=false · 413=20 · Q(quotaLimit)=20 · tier=creditV3 · latestPurchase=2026-10-24 17:18:18 · productId=iip055.weekly.9.99 · ví trước 0/topup 0 ‖ b: Từ bằng chứng test08 (lượt chạy dừng ở bước đọc ví cuối do lỗi chạm Setting): Q=20 — 2 lượt (test05) + 18 lượt (test08) result; lượt Q+1 hiện dialog 481 \"Daily limit reached\" (ảnh 'N167 — 481 lần Q+1', 19:16)",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test01_buyWeeklyFromHome-171603, r2sub-test08-tu-bang-chung-192800",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "117": {
+  "status": "FAIL",
+  "actual": "a: header badge=ẩn · Upgrade=false · 413 Unlimited=false · RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44 ‖ b: lần Q+1 không 481: 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203, r2fin-test06_grandfatherGenBeyondQ-112506",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N117/N117-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N117/N117-2.png"
+  ],
+  "suite": "S6-RC"
+ },
+ "118": {
+  "status": "PASS",
+  "actual": "KQ: đổi RC ngày mai → hôm nay, kill + mở lại: 413=20 (Q=20, topup 0) · tier=creditV3 · RC=2026-10-24T00:00:00Z",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test05_todayStateThenGenTwo-182349",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "119": {
+  "status": "PASS",
+  "actual": "KQ: đổi RC sang ngày mai → grandfather: 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true · 413: Setting ẩn My Balance với grandfather (SettingsView.swift:84) nên không thấy 'Unlimited' ‖ pre: gen 2 lần ở build hôm nay: 413 20 → 18 · badge 20 → result:19 → result:18",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test06_grandfatherGenBeyondQ-112506, r2sub-test05_todayStateThenGenTwo-182349",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "120": {
+  "status": "PASS",
+  "actual": "KQ: grandfather gen không trừ ví: 21/21 lượt result, 481=0 · ví (Debug quota.total/topup) 15/0 → sau thử mua 15/0 → sau gen 15/0 · tier=unlimitedV1 · isUnlimitedGen=true (HOLD phía BE: không thấy từ app)",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test06_grandfatherGenBeyondQ-112506",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "121": {
+  "status": "PASS",
+  "actual": "a: sub cũ (22/10) đã hết hạn, mua lại Weekly hôm nay: 413=20 · Q(quotaLimit)=20 · tier=creditV3 · latestPurchase=2026-10-24 17:18:18 · productId=iip055.weekly.9.99 · ví trước 0/topup 0 ‖ b: Như N116-b: user mua lại gói hôm nay bị áp quota, lượt Q+1 hiện 481 (ảnh 19:16)",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test01_buyWeeklyFromHome-171603, r2sub-test08-tu-bang-chung-192800",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "122": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chưa chạy: như N083 (chu kỳ đang trả bắt đầu sau mốc, sub đầu trước mốc)",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "123": {
+  "status": "PASS",
+  "actual": "a: ngày hôm nay: tier=creditV3 · activeProviders=apple-store · hasActiveSub=true · quotaEnforced=true ‖ b: ngày tương lai: RC=2026-10-26T00:00:00Z · tier=unlimitedV1 · isUnlimitedGen=true · latestPurchase=2026-10-25 11:13:44 · activeProviders=apple-store · hasActiveSub=true",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test04_grandfatherState-112203, r2sub-test05_todayStateThenGenTwo-182349 · CHẤM TAY: Gộp 2 vế: RC ngày tương lai (2026-10-26) → tier=unlimitedV1 dù BE có sub apple-store (app quyết theo latestPurchase RevenueCat < mốc); RC hôm nay → tier=creditV3, quotaEnforced=true theo BE. Đo qua màn Debug Sub state + code GeniusApiVersionRouter.swift:90–131 — không bắt traffic (proxy ngoài phạm vi).",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "125": {
+  "status": "FAIL",
+  "actual": "KQ: RC ép='empty' · giá trị app đang dùng=2026-10-24T00:00:00Z · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, -",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-rc-empty-124336 · CHẤM TAY: RC quota_grandfather_until rỗng (ép trong code, đi qua luật syncAllKeys): app bỏ qua chuỗi rỗng → giữ giá trị đã lưu 2026-10-24 (cài mới thì dùng default code 2026-08-11) → tier=creditV3, VẪN áp quota (ví 0 → 481). Expected: không áp quota cho ai. Code chủ ý ngược spec: GeniusApiVersionRouter.swift:99–101 'Rỗng hoặc parse fail → không grandfather ai' — hỏi PO chốt bên nào.",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "126": {
+  "status": "Cần xem",
+  "actual": "",
+  "note": "Chấm từ bằng chứng/code: Phần app: App User ID = UUID do app sinh (62007A49-D5B9-4F7E-BD43-81D58D1F64FA, màn Debug), không phải $RCAnonymousID — đạt. Phần tra customer trên RevenueCat dashboard cần quyền dashboard — chưa đối chiếu.",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "127": {
+  "status": "PASS",
+  "actual": "Free user chưa đăng nhập: Setting → My Balance → Get More → Purchase → xác nhận sheet Apple → không có bước đăng nhập chen vào; app tự về 413, thẻ 0 → 1.",
+  "note": "KQ autotest 22/10 (TC cũ #125, lượt buy-test01_pullCancelThenBuyRapidTaps-154643)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N127/N127-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N127/N127-2.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "128": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ người: đăng nhập Apple trong app cần mật khẩu Apple ID",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "129": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy thứ 2 cùng Apple ID",
+  "evidence": [],
+  "suite": "S9-2DEV"
+ },
+ "130": {
+  "status": "PASS",
+  "actual": "trước gỡ 413=1 · sau cài lại 413=1 (quota 0, topup 1, có gói=true) · gen result → topup 0 (App User ID: Debug không hiển thị — so bằng ví)",
+  "note": "KQ autotest 22/10 (TC cũ #128, lượt sub-reinstall128-182022)",
+  "evidence": [],
+  "suite": "S10-DESTRUCT"
+ },
+ "131": {
+  "status": "PASS",
+  "actual": "KQ: App User ID trước gỡ app=62007A49-D5B9-4F7E-BD43-81D58D1F64FA",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-n131-sau-124131 · CHẤM TAY: Chấm tay: App User ID trước gỡ app = sau cài lại = 62007A49-D5B9-4F7E-BD43-81D58D1F64FA (log 'App uninstalled.' 25/10 12:40); test tự chấm FAIL do chuỗi ID đọc từ log dính '\\r'. deviceId lưu Keychain — GetDeviceIdProvider.swift:8–21, không dùng identifierForVendor.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N131/N131-6.png"
+  ],
+  "suite": "S10-DESTRUCT"
+ },
+ "132": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy thứ 2 cùng Apple ID",
+  "evidence": [],
+  "suite": "S9-2DEV"
+ },
+ "133": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ tài nguyên: cần máy B chưa đăng nhập",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "134": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Không tự làm: Erase All Content and Settings xoá máy test — cần người quyết",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "136": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Phần app: key daily_quota_amount đã gỡ khỏi RemoteConfigKeys.swift:216–218 (đọc code); 413=15 cần PO đặt Q=15 trên CMS — Chờ PO",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "137": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ PO: đổi số lượt/ngày (Q) trên CMS",
+  "evidence": [],
+  "suite": "S7-CMS"
+ },
+ "138": {
+  "status": "Cần xem",
+  "actual": "KQ: Phía app: chặn ở lượt Q+1 với Q=20 lấy từ BE (quotaLimit=20) — 481 hiện trước khi gọi gen. Phía BE (ngưỡng CMS, ERR12): cần BE xác nhận",
+  "note": "Autotest vòng 2 24/10 · lượt r2sub-test08-tu-bang-chung-192800",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "139": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ PO: đổi số lượt/ngày (Q) trên CMS",
+  "evidence": [],
+  "suite": "S7-CMS"
+ },
+ "143": {
+  "status": "PASS",
+  "actual": "1: RC ép topup_offer_max_per_day='-1' · enable_topup=true · offer hiện lần 1/2/3 = có/không/không · default code = 1 ‖ 0: RC ép topup_offer_max_per_day='0' · enable_topup=true · offer hiện lần 1/2/3 = có/không/không · default code = 1 ‖ abc: RC ép topup_offer_max_per_day='abc' · enable_topup=true · offer hiện lần 1/2/3 = có/không/không · default code = 1",
+  "note": "Autotest vòng 2 24/10 · lượt r2rc-offer--1-164108, r2rc-offer-0-163445, r2rc-offer-abc-164747 · CHẤM TAY: Ghi chú: hasShownTopupOfferToday (CreditQuotaBalanceProvider.swift:56–62) trả false khi hôm nay chưa chào lần nào, không xét max → mọi giá trị max (kể cả 0 / -1 / 'abc') vẫn cho hiện offer lần đầu trong ngày; hành vi đo được = default code 1. Với '-1' app LƯU -1 (khác 0/'abc' bị bỏ qua) nhưng không quan sát được khác biệt.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N143/N143-6.png"
+  ],
+  "suite": "S6-RC"
+ },
+ "144": {
+  "status": "PASS",
+  "actual": "2026-13-45: RC ép='2026-13-45' · giá trị app đang dùng=2026-13-45 · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, - ‖ abc: RC ép='abc' · giá trị app đang dùng=abc · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, - ‖ ddmmyyyy: RC ép='ddmmyyyy' · giá trị app đang dùng=01/11/2026 · tier=creditV3 · isUnlimitedGen=false · 413=0 · gen: 481, -",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-rc-2026-13-45-125439, r2fin-rc-abc-125057, r2fin-rc-ddmmyyyy-124713 · CHẤM TAY: 3 giá trị sai định dạng ('01/11/2026', 'abc', '2026-13-45') ép trong code: app LƯU nguyên chuỗi, parse fail → không grandfather ai → tier=creditV3, áp quota (ví 0 → 481). Với sub mua hôm nay, kết quả trùng với default code 2026-08-11 nên đạt Expected; lưu ý app không quay về giá trị default mà xử như 'không grandfather' (GeniusApiVersionRouter.swift:99–101).",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "145": {
+  "status": "Lệch spec",
+  "actual": "Theo code: app đã gỡ key `enable_daily_quota` / `daily_quota_amount` (`RemoteConfigKeys.swift:214-218` — hạn mức đọc từ BE `credits.subscription.dailyQuota`). Đổi 2 key này trên Firebase không có tác dụng phía app → hành vi TC giả định không còn tồn tại; PO/BE chốt nguồn config (Spec Q&A #3). Không đổi RC để chạy.",
+  "note": "KQ autotest 22/10 (TC cũ #136, lượt đọc code) · chấm lại theo Expected mới: Key enable_daily_quota đã gỡ khỏi app (RemoteConfigKeys.swift:216–218) — không đổi được trong code.",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "146": {
+  "status": "Lệch spec",
+  "actual": "Theo code: app đã gỡ key `enable_daily_quota` / `daily_quota_amount` (`RemoteConfigKeys.swift:214-218` — hạn mức đọc từ BE `credits.subscription.dailyQuota`). Đổi 2 key này trên Firebase không có tác dụng phía app → hành vi TC giả định không còn tồn tại; PO/BE chốt nguồn config (Spec Q&A #3). Không đổi RC để chạy.",
+  "note": "KQ autotest 22/10 (TC cũ #137, lượt đọc code) · chấm lại theo Expected mới: như 145",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "147": {
+  "status": "Lệch spec",
+  "actual": "KQ: enable_topup=false · 413 Get More=true · chuỗi free: paywall: App Store · Editor's Choice · Meet Your Best Version  · AI Face Retouching & Enhancement · 500+ Beauty Filters & Effects · HD Export Without Watermark · 20 AI creations every day, refreshed automatically · Weekly → lastchance: 🎉 Limited Offer: 50% OFF Today · Generate unlimited hairstyles with AI · Cancel anytime. · Close · Now only 199.000đ/week · Claim limited time offer · Restore  · Terms → topup: App Store · Editor's Choice · Still not ready to subscribe? · Includes 1 AI creation · One-time purchase only · No subscription or auto-renewal · Instant access after purchase · 0.99$ · (481 'Mua thêm' của subscriber: chạy ở phần sub) — Expected TC còn mơ hồ ('xử lý thế nào khi tắt topup')",
+  "note": "Autotest vòng 2 24/10 · lượt r2rc-enable-topup-off-170054 · CHẤM TAY: enable_topup=false (Debug xác nhận): 413 vẫn hiện Get More; chuỗi free vẫn chào màn topup offer (PaywallView.swift:290 chỉ xét hasShownTopupOfferToday, không xét enable_topup); trong khi dialog 481 bị ẩn (OutOfQuotaDialog.swift:38–41 'PO chốt') và màn 214 không có gói + từ chối mua (CreditQuotaBalanceProvider.swift:37,88). Expected TC chưa định nghĩa (còn chữ ambiguity) → hỏi PO: tắt topup thì offer free & Get More có ẩn không.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N147/N147-6.png"
+  ],
+  "suite": "S6-RC"
+ },
+ "148": {
+  "status": "PASS",
+  "actual": "KQ: RC ép topup_offer_max_per_day='2' · enable_topup=true · offer hiện lần 1/2/3 = có/có/không",
+  "note": "Autotest vòng 2 24/10 · lượt r2rc-offer-2-165419",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N148/N148-6.png"
+  ],
+  "suite": "S6-RC"
+ },
+ "149": {
+  "status": "Lệch spec",
+  "actual": "Theo code: app đã gỡ key `enable_daily_quota` / `daily_quota_amount` (`RemoteConfigKeys.swift:214-218` — hạn mức đọc từ BE `credits.subscription.dailyQuota`). Đổi 2 key này trên Firebase không có tác dụng phía app → hành vi TC giả định không còn tồn tại; PO/BE chốt nguồn config (Spec Q&A #3). Không đổi RC để chạy.",
+  "note": "KQ autotest 22/10 (TC cũ #142, lượt đọc code) · chấm lại theo Expected mới: như 145",
+  "evidence": [],
+  "suite": "S6-RC"
+ },
+ "150": {
+  "status": "FAIL",
+  "actual": "Paywall sub (Home): không có 'Unlimited', có dòng '20 AI creations every day, refreshed automatically' (đúng nghĩa dòng chính mới). Nhưng paywall Last-chance (chuỗi feature i2i) vẫn ghi 'Generate unlimited hairstyles with AI' → còn chữ Unlimited ở 1 touchpoint sub.",
+  "note": "KQ autotest 22/10 (TC cũ #144, lượt free-test05_subPaywallCopyAndPolicy-153721)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N150/N150-1.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "151": {
+  "status": "FAIL",
+  "actual": "Mua Yearly thành công trên paywall feature → app chuyển thẳng màn Generating (gen nối tiếp), không có thông báo 'Chào mừng! Bạn có 20 lần tạo mỗi ngày.' / bản EN tương đương.",
+  "note": "KQ autotest 22/10 (TC cũ #145, lượt sub-test01_buySubOnFeaturePaywall-163149)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N151/N151-1.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "152": {
+  "status": "PASS",
+  "actual": "Paywall sub: giá (1.199.000đ/year, 299.000đ/week), Yearly/Weekly, 'Cancel anytime', Privacy, Terms, Restore, quyền lợi '20 AI creations every day, refreshed automatically'. Mở link Privacy/Terms đúng trang: chưa kiểm.",
+  "note": "KQ autotest 22/10 (TC cũ #146, lượt free-test05_subPaywallCopyAndPolicy-153721)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N152/N152-1.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "153": {
+  "status": "PASS",
+  "actual": "giá='29.000đ' (spec $0.99 — sandbox VN hiển thị VND) · quyền lợi '1 Creation'=true · loại 'One-time purchase'=true",
+  "note": "KQ autotest 22/10 (TC cũ #147, lượt free-test02_headerSettingMyBalanceTopup-153427)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N153/N153-1.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "154": {
+  "status": "FAIL",
+  "actual": "Last-chance (sub paywall) có chữ 'Generate unlimited hairstyles with AI'. Không thấy chữ 'credit' trên Home/Setting/413/màn topup/481/Generating/paywall i2i đã duyệt (icon ic_credit chỉ là tên asset).",
+  "note": "KQ autotest 22/10 (TC cũ #148, lượt free-test01_freeChainFirstOfDay-153238)",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N154/N154-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N154/N154-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N154/N154-3.png"
+  ],
+  "suite": "S1-READ"
+ },
+ "155": {
+  "status": "FAIL",
+  "actual": "KQ: App Store (US, bản 3.0.0 phát hành 23/10, đọc 24/10 15:39): mô tả có \"Unlock unlimited access to premium features by subscribing.\" (Expected: không có \"Unlimited\") · \"Subscription options: weekly, monthly, or yearly\" (còn Monthly) · không có câu \"Q lần tạo mỗi ngày\" · In-App Purchases còn liệt kê Weekly $5.99 / Yearly $49.99 cũ + các pack \"1 AI Generation\" $5.99–$24.99. Nguồn: iTunes lookup API (file web-n155-appstore-lookup-*.json) + trang apps.apple.com/us/app/id6758941687. Mô tả từng gói trong App Store Connect cần quyền ASC — chưa đọc.",
+  "note": "Autotest vòng 2 24/10 · lượt web-n155-153923",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "156": {
+  "status": "PASS",
+  "actual": "KQ: Đọc từ code, chưa kiểm trên build: PaywallDefaultView.swift:19–23 — OfferPlan.defaults chỉ còn iip055.weekly.9.99 ($9.99) + iip055.yearly.39.99 ($39.99, BEST VALUE), không có Monthly / $5.99. Hiện màn fallback trên máy cần chặn RevenueCat offerings (chặn domain) — ngoài luật test.",
+  "note": "Autotest vòng 2 24/10 · lượt code-n156-153943",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "157": {
+  "status": "PASS",
+  "actual": "",
+  "note": "Chấm từ bằng chứng/code: Đọc từ code 2.9.0: không còn product id iip055.iap.3.99/9.99/14.99/24.99 nào trong iosApp (grep 24/10), không còn UI ví credit cũ. Kiểm trên UI Seedance cần tab Home (server lỗi 25/10).",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "158": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần proxy bắt request offering",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "159": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần proxy bắt request lúc launch",
+  "evidence": [],
+  "suite": "S1-READ"
+ },
+ "160": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ },
+ "167": {
+  "status": "PASS",
+  "actual": "a: Badge giảm dần theo lượt (WALLET: 20 → 8 sau 10 lượt → 3 sau 15 → ẩn khi hết) · lượt Q+1 hiện 481 (ảnh 19:16). Phần mua từ 481 → gen tự chạy tiếp → 413=0: chạy lại (lượt này 'Get 1 creation' không ăn chạm — giao dịch không diễn ra) ‖ b: hết 2 ví: 481=true · mua từ 481 xong=true · gen tự chạy tiếp với lượt vừa mua=true · 413 sau=0",
+  "note": "Autotest vòng 2 24/10 · lượt r2fin-test13_buyFrom481Resume-122118, r2sub-test08-tu-bang-chung-192800",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-2.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-3.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-4.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-5.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N167/N167-6.png"
+  ],
+  "suite": "S3-SUB"
+ },
+ "168": {
+  "status": "FAIL",
+  "actual": "badge Home=1 (kỳ vọng ẩn) · pill='Pro' (kỳ vọng Upgrade) · 413=1",
+  "note": "KQ autotest 22/10 (TC cũ #162, lượt buy-rerun072-161528) · chấm lại theo Expected mới: Badge Home = 1 (Expected ẩn). Nút \"Pro\" = Upgrade/Get Pro (Localizable home_button_upgrade=\"Pro\") → mục 2 đúng; 413 = 1 đúng.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N168/N168-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N168/N168-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "169": {
+  "status": "PASS",
+  "actual": "mua trên offer: rời paywall=true (popup OK=true) → generating · gen xong=true · topup sau=0 · pill='Pro' (spec Upgrade)",
+  "note": "KQ autotest 22/10 (TC cũ #163, lượt buy-rc163-162339) · chấm lại theo Expected mới: Nút \"Pro\" chính là Upgrade/Get Pro (home_button_upgrade=\"Pro\") → header đúng; gen xong, topup 0.",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N169/N169-1.png",
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N169/N169-2.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "170": {
+  "status": "PASS",
+  "actual": "Bấm Generate (free) → mua Yearly trên paywall feature: mua thành công, gen tự chạy tiếp, 413 = 21 (20 quota + 1 topup dư sau khi gen trừ topup). Header KHÔNG có pill 'Pro' (subscriber không có pill nào, chỉ badge 21 + nút Setting).",
+  "note": "KQ autotest 22/10 (TC cũ #164, lượt sub-test01_buySubOnFeaturePaywall-163149) · chấm lại theo Expected mới: Sau mua gói nút \"Pro\"/Upgrade biến mất; 413 = 21 = Q 20 + 1 topup dư từ trước (413 = tổng 2 ví, như TC-066).",
+  "evidence": [
+   "/Users/kieunga/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung/N170/N170-1.png"
+  ],
+  "suite": "S2-FREE"
+ },
+ "171": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chưa chạy: Restore Purchases trên app cài mới (chạy được — chưa làm)",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "172": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ server: gen video Seedance (I2V) vào từ tab Home — Home lỗi server 25/10",
+  "evidence": [],
+  "suite": "S3-SUB"
+ },
+ "173": {
+  "status": "Chờ",
+  "actual": "",
+  "note": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
+  "evidence": [],
+  "suite": "X-BE"
+ }
+}
