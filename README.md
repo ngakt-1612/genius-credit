@@ -1,9 +1,9 @@
 # Genius iOS 2.9.0 — Autotest Daily Quota & Topup (credit) · IIP055.1.16 · vòng 2
 
 Autotest XCUITest trên iPhone 12 (iOS 26.5.2), build DEBUG `.prod`, sandbox IAP — 24–25/10/2026.
-File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**). Kết quả: `results/TC_IIP055.1.16_Daily_Quota_Topup_ket_qua_v2.xlsx` (cột I status · J thực tế · K nguồn/ghi chú · L link ảnh).
+File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, 159 TC) — **phạm vi test 140 TC** (19 case bỏ ngoài phạm vi, sheet `Ngoài phạm vi`). Kết quả: `results/TC_IIP055.1.16_Daily_Quota_Topup_ket_qua_v2.xlsx` (cột I status · J thực tế · K nguồn/ghi chú · L link ảnh).
 
-## Kết quả
+## Kết quả (140 TC trong phạm vi)
 
 | Status | Số TC | Ghi chú |
 |---|---|---|
@@ -12,9 +12,9 @@ File TC: `TC_IIP055.1.16_Daily_Quota_Topup.xlsx` (bản sửa 24/10, **159 TC**)
 | Lệch spec | 12 | app khác spec, có thể dev cố ý → hỏi PO |
 | Cần xem | 4 | N041, N087, N126, N138 |
 | Pending | 11 | user cho Pending: nhóm reset 07:00 (N011, N108–N112, N115) · chờ BE auto-release 10′ (N048–N050, N100) |
-| N/A | 19 | bỏ theo yêu cầu 25/10: 16 case cần giả lập phía server (vendor lỗi, webhook, API trực tiếp, 5xx, proxy) + 3 case PO đổi CMS |
 | Chờ | 18 | máy thứ 2 (6) · tài khoản sandbox / StoreKit lỗi (4) · cần người/đồng ý (3) · ảnh NSFW mẫu (1) · chưa chạy (4) — lý do từng TC ở cột K |
 
+- **Ngoài phạm vi (19)** — bỏ theo yêu cầu 25/10: 16 case cần giả lập phía server (vendor lỗi, webhook, API trực tiếp, 5xx, proxy) + 3 case PO đổi CMS. Danh sách ở sheet `Ngoài phạm vi` của file kết quả.
 - 75 TC đã chạy 22/10 giữ kết quả + ảnh 22/10, **chấm lại theo Expected mới** (N° đổi → map theo nội dung). 84 TC còn lại chạy vòng 2.
 - Remote Config: **ép giá trị trong code rồi build lại** (`RemoteConfigRepositoryImpl.codeOverrides`, áp trong `syncAllKeys` để đi đúng luật parse của Firebase) — xem `app-patches/`.
 - 25/10 Home lỗi server → lượt gen chạy qua **Enhance (tab Create)**; đo thêm trừ lượt trên các tab còn chạy.

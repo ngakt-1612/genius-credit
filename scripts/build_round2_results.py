@@ -24,7 +24,7 @@ TC_FILE = Path("~/Downloads/TC_IIP055.1.16_Daily_Quota_Topup.xlsx").expanduser()
 OUT_XLSX = Path("~/Downloads/TC_IIP055.1.16_Daily_Quota_Topup_ket_qua_v2.xlsx").expanduser()
 EVID = Path("~/Downloads/Genius-2.9.0-Daily-Quota-round2-bang-chung").expanduser()
 STATUS = {"PASS": "PASS", "FAIL": "FAIL", "NA": "N/A", "N/A": "N/A", "CHECK": "Cần xem", "MISMATCH": "Lệch spec", "WAIT": "Chờ"}
-FILL = {"PASS": "C6EFCE", "FAIL": "FFC7CE", "Lệch spec": "FFEB9C", "Cần xem": "DDEBF7", "Chờ": "EDEDED", "Pending": "FCE4D6", "N/A": "EDEDED"}
+FILL = {"PASS": "C6EFCE", "FAIL": "FFC7CE", "Lệch spec": "FFEB9C", "Cần xem": "DDEBF7", "Chờ": "EDEDED", "Pending": "FCE4D6", "N/A": "EDEDED", "Ngoài phạm vi": "D9D9D9"}
 GATE_REASON = {
     "X-BE": "Chờ BE/Infra: cần giả lập phía server (vendor lỗi/timeout, webhook, gọi API trực tiếp, proxy) — theo luật không tự giả lỗi server",
     "S9-STOREKIT": "Chờ tài nguyên: sandbox trên máy tự xác nhận mua → cần tài khoản sandbox khác (huỷ sheet/thẻ lỗi/Ask to Buy) hoặc StoreKit Configuration",
@@ -152,11 +152,25 @@ def main():
             ws[f"L{r}"] = f"{len(res['evidence'])} ảnh — mở thư mục"
             ws[f"L{r}"].hyperlink = Path(res["evidence"][0]).parent.as_uri()
             ws[f"L{r}"].font = Font(color="0563C1", underline="single")
+    # Ngoài phạm vi (user bỏ 25/10): ẩn khỏi sheet chính, liệt kê ở sheet riêng — không xoá dòng để giữ ô gộp.
+    out = [c for c in matrix if results[c["id"]]["status"] == "Ngoài phạm vi"]
+    if out:
+        for c in out:
+            ws.row_dimensions[c["row"]].hidden = True
+        so = wb.create_sheet("Ngoài phạm vi")
+        so.append(["N°", "Nhóm", "Sub-scenario", "Lý do bỏ"])
+        for col in "ABCD":
+            so[f"{col}1"].font = Font(bold=True)
+        for c in out:
+            so.append([c["id"], c["group"], c["sub_scenario"], results[c["id"]]["note"]])
+        for col, w in (("A", 6), ("B", 36), ("C", 70), ("D", 90)):
+            so.column_dimensions[col].width = w
     wb.save(OUT_XLSX)
     tally = defaultdict(int)
     for v in results.values():
         tally[v["status"]] += 1
-    print(json.dumps({"xlsx": str(OUT_XLSX), "evidence": str(EVID), **tally}, ensure_ascii=False))
+    scope = sum(v for k, v in tally.items() if k != "Ngoài phạm vi")
+    print(json.dumps({"xlsx": str(OUT_XLSX), "trong_pham_vi": scope, **tally}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
